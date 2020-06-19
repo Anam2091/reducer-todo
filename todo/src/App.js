@@ -23,7 +23,14 @@ function App() {
 
       }
         <TodoForm dispatch={dispatch}/>
-        
+        <button
+            onClick={(e) => {
+                e.preventDefault();
+             dispatch({ type: "CLEAR_TODO" });
+            }}
+          >
+              Clear
+          </button>
       </header>
     </div>
   );
