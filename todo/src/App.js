@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       {
-        state.map((todo) =>{
+        state.items.map((todo) =>{
           return(
             <Todo todo={todo}/>
           )
