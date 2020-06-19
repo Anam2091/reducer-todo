@@ -17,7 +17,7 @@ function App() {
       {
         state.items.map((todo) =>{
           return(
-            <Todo todo={todo}/>
+            <Todo todo={todo} dispatch={dispatch}/>
           )
         })
 
